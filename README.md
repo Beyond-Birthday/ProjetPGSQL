@@ -25,4 +25,4 @@ Trigger qui save les changements de noms des skieurs, l'ancien nom est sauvegard
 
 
 # BONUS:
-Modifier la fonction 4 our que le classement des autres skieurs soit mis à jour
+Modifier la fonction 4 pour que le classement des autres skieurs soit mis à jour
