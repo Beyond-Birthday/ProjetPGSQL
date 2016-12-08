@@ -21,7 +21,7 @@ create table STATION(
 create table SKIEUR(
 	noSkieur 			serial,
 	nomSkieur 			varchar(30),
-	idSpecialite		integer,
+	idSpecialite			integer,
 	idStation			integer,
 	constraint pkSkieur primary key(noSkieur),
 	constraint pkSkieurSpecialite foreign key(idSpecialite) references SPECIALITE(idSpecialite),
@@ -30,7 +30,7 @@ create table SKIEUR(
 
 create table COMPETITION(
 	idCompet 			serial,
-	libelleCompet 		varchar(30),
+	libelleCompet 			varchar(30),
 	dateComp 			date,
 	idStation			integer,
 	constraint pkCompetition primary key(idCompet),
@@ -48,7 +48,7 @@ create table CLASSEMENT(
 
 create table COMPORTE(
 	idCompet 			serial,
-	idSpecialite		serial,
+	idSpecialite			serial,
 	constraint pkComporteCompetition foreign key(idCompet) references COMPETITION(idCompet),
 	constraint pkComporteSpecialite foreign key(idSpecialite) references SPECIALITE(idSpecialite),
 	constraint pkComporte primary key(idCompet, idSpecialite)
